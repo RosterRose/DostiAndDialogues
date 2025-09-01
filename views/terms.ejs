@@ -1,0 +1,275 @@
+<% 
+const body = `
+<div class="legal-container">
+    <div class="legal-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="legal-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h1 class="legal-title">Global Terms & Conditions</h1>
+                <p class="legal-subtitle">Effective immediately upon accessing our content</p>
+                <div class="legal-meta">
+                    <span class="meta-item">
+                        <i class="fas fa-globe"></i>
+                        Universal Application
+                    </span>
+                    <span class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        Last Updated: ${new Date().toLocaleDateString()}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="table-of-contents">
+                    <h3><i class="fas fa-list"></i> Table of Contents</h3>
+                    <ul>
+                        <li><a href="#nature-scope">Nature & Scope of Content</a></li>
+                        <li><a href="#assumption-risk">Assumption of Risk</a></li>
+                        <li><a href="#waiver-release">Waiver & Release</a></li>
+                        <li><a href="#global-enforceability">Global Enforceability</a></li>
+                        <li><a href="#liquidated-damages">Liquidated Damages</a></li>
+                        <li><a href="#consent-agreement">Consent & Agreement</a></li>
+                        <li><a href="#indemnification">Indemnification</a></li>
+                        <li><a href="#severability">Severability & Survival</a></li>
+                        <li><a href="#entire-agreement">Entire Agreement</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-document">
+                    <div class="document-header">
+                        <div class="warning-banner">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>Important Legal Notice:</strong>
+                                <p>This agreement is legally binding. By continuing to access our content, you agree to all terms below.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agreement-intro">
+                        <p class="intro-text">
+                            This Global Disclaimer and Agreement ("Agreement") is entered into between the <strong>Viewer</strong> ("You," "Your," "User," or "Party") and the <strong>Content Creator(s), Publisher(s), Distributor(s), Operators, Successors, and Affiliates</strong> ("We," "Us," or "Our").
+                        </p>
+                        <p class="intro-text">
+                            By continuing to access, view, or otherwise engage with any material, video, live stream, or related publication made available by Us (collectively, "Content"), You hereby <strong>voluntarily consent, acknowledge, and irrevocably agree</strong> to be bound by the following provisions.
+                        </p>
+                    </div>
+
+                    <section id="nature-scope" class="legal-section">
+                        <h2><span class="section-number">1.</span> Nature, Scope, and Interpretation of Content</h2>
+                        
+                        <div class="subsection">
+                            <h3>1.1 Content Warning</h3>
+                            <p>The Content may contain materials that are <strong>controversial, offensive, sensitive, or disturbing</strong> in nature, including but not limited to:</p>
+                            <ul class="legal-list">
+                                <li>Political commentary, ideological discourse, and government criticism</li>
+                                <li>Religious discussions, spiritual critiques, and theological references</li>
+                                <li>Sexual subject matter, mature discussions, or explicit references</li>
+                                <li>Vulgar, profane, abusive, or offensive language</li>
+                                <li>Satirical, fictional, comedic, dramatized, or exaggerated depictions</li>
+                                <li>Opinions, perspectives, or interpretations that may conflict with cultural, societal, or personal beliefs</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>1.2 Content Disclaimer</h3>
+                            <p>All Content is provided <strong>as-is, without warranty or representation</strong>, and is intended solely for <strong>informational, educational, entertainment, and/or satirical purposes</strong>.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>1.3 Accuracy Disclaimer</h3>
+                            <p>Nothing contained herein shall be construed as <strong>factual, objective, or universally accurate</strong>.</p>
+                        </div>
+                    </section>
+
+                    <section id="assumption-risk" class="legal-section">
+                        <h2><span class="section-number">2.</span> Assumption of Risk by Viewer</h2>
+                        
+                        <div class="subsection">
+                            <h3>2.1 Voluntary Access</h3>
+                            <p>By accessing the Content, You do so <strong>freely, knowingly, and voluntarily</strong>, accepting all risks inherent in engaging with material that may be controversial or objectionable.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>2.2 Potential Risks</h3>
+                            <p>You acknowledge that exposure to the Content may result in <strong>emotional distress, psychological discomfort, moral disagreement, or cultural conflict</strong>, and You expressly accept such risks as a condition of continued viewing.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>2.3 Viewer Responsibility</h3>
+                            <div class="important-notice">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <p>If You are likely to be offended, disturbed, or otherwise adversely affected by the Content, it is <strong>Your sole duty and obligation</strong> to immediately discontinue access.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="waiver-release" class="legal-section">
+                        <h2><span class="section-number">3.</span> Waiver, Release, and Covenant Not to Sue</h2>
+                        
+                        <div class="subsection">
+                            <h3>3.1 Complete Waiver</h3>
+                            <p>You hereby <strong>waive, release, and discharge forever</strong> any and all legal rights, remedies, and causes of action that may arise, including but not limited to claims of:</p>
+                            <ul class="legal-list">
+                                <li>Defamation, libel, or slander</li>
+                                <li>Harassment, obscenity, or offensiveness</li>
+                                <li>Hate speech, discrimination, or bias</li>
+                                <li>Emotional distress, reputational injury, or community offense</li>
+                                <li>Regulatory, statutory, or criminal allegations</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>3.2 Non-Action Covenant</h3>
+                            <p>You further covenant and agree <strong>not to initiate, encourage, or support</strong> any civil, criminal, administrative, or governmental action, whether direct or indirect, against Us.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>3.3 Scope of Waiver</h3>
+                            <p>This waiver shall extend to <strong>all successors, assigns, representatives, and affiliates</strong> of both Parties.</p>
+                        </div>
+                    </section>
+
+                    <section id="global-enforceability" class="legal-section">
+                        <h2><span class="section-number">4.</span> Universal Application & Global Enforceability</h2>
+                        
+                        <div class="subsection">
+                            <h3>4.1 Universal Scope</h3>
+                            <p>This Agreement applies <strong>without limitation, restriction, or exception</strong> in all nations, states, territories, and jurisdictions worldwide.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>4.2 International Recognition</h3>
+                            <p>To the maximum extent permitted under international law, this Agreement shall be recognized as <strong>legally binding, enforceable, and effective</strong> across all courts, arbitral forums, and legal systems.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>4.3 Conflict Resolution</h3>
+                            <p>Where local law may conflict, the provisions of this Agreement shall be construed to the <strong>greatest extent possible to maintain enforceability</strong>, and all unaffected provisions shall continue in full force.</p>
+                        </div>
+                    </section>
+
+                    <section id="liquidated-damages" class="legal-section">
+                        <h2><span class="section-number">5.</span> Liquidated Damages, Penalties, and Remedies</h2>
+                        
+                        <div class="subsection">
+                            <h3>5.1 Breach Damages</h3>
+                            <div class="damage-notice">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <p>In the event that You breach this Agreement by attempting to sue, defame, harass, or otherwise take action against Us, You shall be liable for <strong>liquidated damages</strong> in the sum of:</p>
+                                    <p class="damage-amount"><strong>USD $100,000 (One Hundred Thousand United States Dollars)</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>5.2 Damage Justification</h3>
+                            <p>This sum represents a <strong>reasonable pre-estimate of harm</strong> caused by such breach and is agreed upon by the Parties as compensation, <strong>not as a penalty</strong>.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>5.3 Additional Costs</h3>
+                            <p>You shall also be liable for all <strong>legal costs, attorney's fees, court expenses, arbitration fees, and enforcement costs</strong> incurred by Us in defending against or pursuing remedies for such breach.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>5.4 Joint Liability</h3>
+                            <p>This obligation shall apply <strong>jointly and severally</strong> to the Viewer and any party acting on their behalf.</p>
+                        </div>
+                    </section>
+
+                    <section id="consent-agreement" class="legal-section">
+                        <h2><span class="section-number">6.</span> Consent, Acknowledgment, and Irrevocable Agreement</h2>
+                        
+                        <div class="subsection">
+                            <h3>6.1 Informed Consent</h3>
+                            <p>By continuing to view the Content, You affirm that You have <strong>read, understood, and unconditionally consented</strong> to this Agreement.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>6.2 Voluntary Agreement</h3>
+                            <p>You acknowledge that Your acceptance is <strong>voluntary, informed, and irrevocable</strong>, and that failure to agree requires You to <strong>immediately cease access</strong>.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>6.3 Legal Assent</h3>
+                            <div class="consent-notice">
+                                <i class="fas fa-pen-alt"></i>
+                                <p>Your continued engagement constitutes a <strong>binding act of legal assent</strong>, equivalent to a signed written contract under international contract law principles.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="indemnification" class="legal-section">
+                        <h2><span class="section-number">7.</span> Indemnification</h2>
+                        
+                        <div class="subsection">
+                            <h3>7.1 Hold Harmless Agreement</h3>
+                            <p>You agree to <strong>indemnify, defend, and hold harmless</strong> the Publisher, its affiliates, and representatives from and against any and all claims, liabilities, damages, losses, or expenses (including attorney's fees) arising out of or related to:</p>
+                            <ul class="legal-list">
+                                <li>Your access or use of the Content</li>
+                                <li>Any breach of this Agreement</li>
+                                <li>Any legal, governmental, or third-party action initiated as a result of Your conduct</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="severability" class="legal-section">
+                        <h2><span class="section-number">8.</span> Severability & Survival</h2>
+                        
+                        <div class="subsection">
+                            <h3>8.1 Partial Invalidity</h3>
+                            <p>If any provision of this Agreement is deemed unenforceable in any jurisdiction, such provision shall be reformed to the minimum extent necessary to preserve its enforceability.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>8.2 Remaining Provisions</h3>
+                            <p>All remaining provisions shall survive and remain in <strong>full force and effect</strong>, regardless of any partial invalidity.</p>
+                        </div>
+                    </section>
+
+                    <section id="entire-agreement" class="legal-section">
+                        <h2><span class="section-number">9.</span> Entire Agreement & Governing Principles</h2>
+                        
+                        <div class="subsection">
+                            <h3>9.1 Complete Agreement</h3>
+                            <p>This Agreement constitutes the <strong>entire and exclusive agreement</strong> between the Parties with respect to the Content, superseding any prior communications, disclaimers, or agreements.</p>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>9.2 Governing Law</h3>
+                            <p>This Agreement shall be construed in accordance with the <strong>general principles of international law, contract law, and natural justice</strong>, irrespective of conflicts of law or jurisdictional rules.</p>
+                        </div>
+                    </section>
+
+                    <div class="agreement-footer">
+                        <div class="acceptance-box">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Agreement Acceptance</h3>
+                                <p><strong>By continuing to access this Website and associated Content, You acknowledge, accept, and irrevocably bind Yourself to all provisions of this Agreement.</strong></p>
+                                <p class="disclaimer-text">If You do not agree, You must cease viewing immediately.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h4>Questions about these Terms?</h4>
+                            <p>For any legal inquiries regarding these terms and conditions, please contact us through our official channels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+%>
+
+<%- include('layout', { body }) %>

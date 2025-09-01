@@ -1,0 +1,154 @@
+<% 
+const body = `
+<div class="home-hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-circle large">
+                    <i class="fas fa-microphone mic-icon"></i>
+                    <i class="fas fa-headphones headphones-icon"></i>
+                </div>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Dosti And</span>
+                <span class="title-line">Dialogues</span>
+            </h1>
+            <p class="hero-description">
+                Conversations that matter, friendships that last. Join us for authentic dialogues 
+                about life, relationships, and everything in between.
+            </p>
+            <div class="hero-actions">
+                <a href="#listen" class="cta-button primary">
+                    <i class="fas fa-play"></i>
+                    Listen Now
+                </a>
+                <a href="/terms" class="cta-button secondary">
+                    <i class="fas fa-file-contract"></i>
+                    Legal Terms
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-background">
+        <div class="audio-waves">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+</div>
+
+<section id="listen" class="listen-section">
+    <div class="container">
+        <h2 class="section-title">Listen Everywhere</h2>
+        <p class="section-description">
+            Catch up on all episodes of Dosti And Dialogues on your favorite platform
+        </p>
+        <div class="platform-grid">
+            <!-- <a href="#" class="platform-card" target="_blank">
+                <div class="platform-icon spotify">
+                    <i class="fab fa-spotify"></i>
+                </div>
+                <h3>Spotify</h3>
+                <p>Stream all episodes</p>
+            </a> -->
+            <!-- <a href="#" class="platform-card" target="_blank">
+                <div class="platform-icon apple">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h3>Apple Podcasts</h3>
+                <p>iOS & macOS</p>
+            </a> -->
+            <a href="#" class="platform-card" target="_blank">
+                <div class="platform-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <h3>YouTube</h3>
+                <p>Watch video episodes</p>
+            </a>
+            <!-- <a href="#" class="platform-card" target="_blank">
+                <div class="platform-icon google">
+                    <i class="fab fa-google"></i>
+                </div>
+                <h3>Google Podcasts</h3>
+                <p>Android devices</p>
+            </a> -->
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">About the Show</h2>
+                <p>
+                    Dosti And Dialogues is more than just a podcast—it's a celebration of meaningful 
+                    conversations and genuine friendships. We dive deep into topics that matter, 
+                    sharing stories, insights, and perspectives that resonate with our community.
+                </p>
+                <p>
+                    From heartfelt discussions about relationships to thought-provoking debates 
+                    about society, we create a space where authentic dialogue thrives.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>0</h3>
+                        <p>Episodes</p>
+                    </div>
+                    <div class="stat">
+                        <h3>0</h3>
+                        <p>Listeners</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1</h3>
+                        <p>Platforms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="podcast-illustration">
+                    <div class="mic-stand">
+                        <div class="mic-head">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                    <div class="sound-waves">
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="legal-notice-section">
+    <div class="container">
+        <div class="legal-notice">
+            <div class="notice-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="notice-content">
+                <h3>Important Legal Notice</h3>
+                <p>
+                    By accessing our content, you agree to our comprehensive terms and conditions. 
+                    Our content may include mature themes and strong language. Please review our 
+                    legal documents before proceeding.
+                </p>
+                <div class="legal-links">
+                    <a href="/terms" class="legal-link">Terms & Conditions</a>
+                    <a href="/privacy" class="legal-link">Privacy Policy</a>
+                    <a href="/disclaimer" class="legal-link">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+`;
+%>
+
+<%- include('layout', { body }) %>

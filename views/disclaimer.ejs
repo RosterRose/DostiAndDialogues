@@ -1,0 +1,355 @@
+<% 
+const body = `
+<div class="legal-container">
+    <div class="legal-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="legal-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h1 class="legal-title">Disclaimer</h1>
+                <p class="legal-subtitle">Important disclaimers and limitations</p>
+                <div class="legal-meta">
+                    <span class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        Last Updated: ${new Date().toLocaleDateString()}
+                    </span>
+                    <span class="meta-item">
+                        <i class="fas fa-globe"></i>
+                        Applies Globally
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="table-of-contents">
+                    <h3><i class="fas fa-list"></i> Sections</h3>
+                    <ul>
+                        <li><a href="#general-disclaimer">General Disclaimer</a></li>
+                        <li><a href="#content-accuracy">Content Accuracy</a></li>
+                        <li><a href="#medical-advice">Medical Advice</a></li>
+                        <li><a href="#financial-advice">Financial Advice</a></li>
+                        <li><a href="#legal-advice">Legal Advice</a></li>
+                        <li><a href="#external-links">External Links</a></li>
+                        <li><a href="#personal-views">Personal Views</a></li>
+                        <li><a href="#liability-limitation">Liability Limitations</a></li>
+                        <li><a href="#disclaimer-changes">Changes to Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="legal-document">
+                    <div class="document-header">
+                        <div class="warning-banner">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <strong>Important Disclaimer:</strong>
+                                <p>This disclaimer sets forth the terms and conditions that govern your use of our content and services. Please read carefully.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="agreement-intro">
+                        <p class="intro-text">
+                            The information contained on this website and in our podcast episodes ("Content") is for general information and entertainment purposes only. While we strive to keep the information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the Content.
+                        </p>
+                        <p class="intro-text">
+                            Any reliance you place on such Content is strictly at your own risk. We disclaim any liability for any loss or damage, including without limitation, indirect or consequential loss or damage, arising from the use of this Content.
+                        </p>
+                    </div>
+
+                    <section id="general-disclaimer" class="legal-section">
+                        <h2><span class="section-number">1.</span> General Disclaimer</h2>
+                        
+                        <div class="subsection">
+                            <h3>1.1 Content Purpose</h3>
+                            <p>The Content provided through Dosti And Dialogues is intended for:</p>
+                            <ul class="legal-list">
+                                <li>General information and educational purposes</li>
+                                <li>Entertainment and conversational value</li>
+                                <li>Personal opinion and perspective sharing</li>
+                                <li>Community discussion and engagement</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>1.2 No Professional Advice</h3>
+                            <div class="important-notice">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <p>Our Content does not constitute professional advice of any kind. You should consult with qualified professionals for specific guidance related to your personal circumstances.</p>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>1.3 Use at Your Own Risk</h3>
+                            <p>By accessing and using our Content, you acknowledge and agree that:</p>
+                            <ul class="legal-list">
+                                <li>You use the Content at your own risk and discretion</li>
+                                <li>You are responsible for your own decisions and actions</li>
+                                <li>We are not liable for any consequences of your use of the Content</li>
+                                <li>You will not hold us responsible for any damages or losses</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="content-accuracy" class="legal-section">
+                        <h2><span class="section-number">2.</span> Content Accuracy and Reliability</h2>
+                        
+                        <div class="subsection">
+                            <h3>2.1 Information Accuracy</h3>
+                            <p>While we make every effort to ensure that our Content is accurate and up-to-date:</p>
+                            <ul class="legal-list">
+                                <li>Information may become outdated or incorrect over time</li>
+                                <li>We cannot guarantee the accuracy of all statements made</li>
+                                <li>Guest speakers' views may not reflect our own opinions</li>
+                                <li>Statistics and data may be subject to change</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>2.2 Fact-Checking Responsibility</h3>
+                            <div class="consent-notice">
+                                <i class="fas fa-search"></i>
+                                <p>Users are encouraged to independently verify any information presented in our Content before making decisions based on such information.</p>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>2.3 Content Updates</h3>
+                            <p>We reserve the right to:</p>
+                            <ul class="legal-list">
+                                <li>Update, modify, or remove Content without notice</li>
+                                <li>Correct errors and inaccuracies when discovered</li>
+                                <li>Change our opinions and perspectives over time</li>
+                                <li>Remove Content that no longer reflects our values</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="medical-advice" class="legal-section">
+                        <h2><span class="section-number">3.</span> Medical and Health Disclaimer</h2>
+                        
+                        <div class="subsection">
+                            <h3>3.1 Not Medical Advice</h3>
+                            <div class="damage-notice">
+                                <i class="fas fa-stethoscope"></i>
+                                <div>
+                                    <p><strong>IMPORTANT MEDICAL DISCLAIMER:</strong></p>
+                                    <p>Any health, medical, or wellness information discussed in our Content is not intended as medical advice, diagnosis, or treatment. Always consult qualified healthcare professionals for medical concerns.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>3.2 Health Information Limitations</h3>
+                            <p>Our discussions about health topics:</p>
+                            <ul class="legal-list">
+                                <li>Are based on personal experiences and general knowledge</li>
+                                <li>Should not replace professional medical consultation</li>
+                                <li>May not be applicable to your specific health situation</li>
+                                <li>Are not endorsed by medical professionals</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>3.3 Emergency Situations</h3>
+                            <p>In case of medical emergencies, seek immediate professional medical attention. Do not rely on podcast content for emergency medical guidance.</p>
+                        </div>
+                    </section>
+
+                    <section id="financial-advice" class="legal-section">
+                        <h2><span class="section-number">4.</span> Financial and Investment Disclaimer</h2>
+                        
+                        <div class="subsection">
+                            <h3>4.1 Not Financial Advice</h3>
+                            <p>Any financial, investment, or business information discussed in our Content:</p>
+                            <ul class="legal-list">
+                                <li>Is for informational and educational purposes only</li>
+                                <li>Does not constitute financial, investment, or tax advice</li>
+                                <li>Should not be relied upon for financial decisions</li>
+                                <li>May not be suitable for your financial situation</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>4.2 Investment Risk Warning</h3>
+                            <div class="important-notice">
+                                <i class="fas fa-chart-line"></i>
+                                <p>All investments carry risk of loss. Past performance does not guarantee future results. Consult with qualified financial advisors before making investment decisions.</p>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>4.3 No Financial Relationship</h3>
+                            <p>Unless specifically disclosed, we do not have financial relationships with companies or services discussed in our Content.</p>
+                        </div>
+                    </section>
+
+                    <section id="legal-advice" class="legal-section">
+                        <h2><span class="section-number">5.</span> Legal Advice Disclaimer</h2>
+                        
+                        <div class="subsection">
+                            <h3>5.1 Not Legal Advice</h3>
+                            <p>Any legal information or discussion in our Content:</p>
+                            <ul class="legal-list">
+                                <li>Is not intended as legal advice</li>
+                                <li>Should not be relied upon for legal decisions</li>
+                                <li>May not be current or applicable to your jurisdiction</li>
+                                <li>Cannot replace consultation with qualified legal professionals</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>5.2 Legal Consultation Recommendation</h3>
+                            <p>For specific legal matters, always consult with licensed attorneys in your jurisdiction who can provide advice tailored to your particular circumstances.</p>
+                        </div>
+                    </section>
+
+                    <section id="external-links" class="legal-section">
+                        <h2><span class="section-number">6.</span> External Links and Third-Party Content</h2>
+                        
+                        <div class="subsection">
+                            <h3>6.1 Third-Party Links</h3>
+                            <p>Our Content may include links to external websites and third-party services:</p>
+                            <ul class="legal-list">
+                                <li>We do not control or endorse third-party content</li>
+                                <li>External links are provided for convenience only</li>
+                                <li>We are not responsible for third-party content accuracy</li>
+                                <li>Third-party sites have their own terms and privacy policies</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>6.2 Guest Content Disclaimer</h3>
+                            <div class="consent-notice">
+                                <i class="fas fa-users"></i>
+                                <p>Views expressed by guests or interviewees do not necessarily reflect our opinions or endorsements. Guest statements are their own responsibility.</p>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>6.3 Affiliate Relationships</h3>
+                            <p>Some links in our Content may be affiliate links. We will disclose affiliate relationships in accordance with applicable regulations.</p>
+                        </div>
+                    </section>
+
+                    <section id="personal-views" class="legal-section">
+                        <h2><span class="section-number">7.</span> Personal Views and Opinions</h2>
+                        
+                        <div class="subsection">
+                            <h3>7.1 Subjective Content</h3>
+                            <p>Much of our Content represents personal views and opinions that:</p>
+                            <ul class="legal-list">
+                                <li>Are subjective and may not apply to everyone</li>
+                                <li>Are based on personal experiences and perspectives</li>
+                                <li>May change over time as we learn and grow</li>
+                                <li>Should be considered within their proper context</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>7.2 Diverse Perspectives</h3>
+                            <p>We encourage listeners to:</p>
+                            <ul class="legal-list">
+                                <li>Consider multiple viewpoints on any topic</li>
+                                <li>Form their own informed opinions</li>
+                                <li>Engage in respectful dialogue and debate</li>
+                                <li>Seek out diverse sources of information</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>7.3 Cultural and Social Context</h3>
+                            <p>Our Content reflects our cultural background and social context, which may differ from listeners' experiences and perspectives.</p>
+                        </div>
+                    </section>
+
+                    <section id="liability-limitation" class="legal-section">
+                        <h2><span class="section-number">8.</span> Limitation of Liability</h2>
+                        
+                        <div class="subsection">
+                            <h3>8.1 Disclaimer of Warranties</h3>
+                            <p>We provide our Content on an "as-is" basis and make no warranties, express or implied, including:</p>
+                            <ul class="legal-list">
+                                <li>Warranties of merchantability or fitness for purpose</li>
+                                <li>Warranties of accuracy or completeness</li>
+                                <li>Warranties of non-infringement</li>
+                                <li>Warranties regarding availability or accessibility</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>8.2 Limitation of Damages</h3>
+                            <div class="damage-notice">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <p><strong>LIABILITY LIMITATION:</strong></p>
+                                    <p>In no event shall we be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our Content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>8.3 Maximum Liability</h3>
+                            <p>Our total liability for any claims arising from our Content shall not exceed the amount you paid, if any, for accessing such Content.</p>
+                        </div>
+                    </section>
+
+                    <section id="disclaimer-changes" class="legal-section">
+                        <h2><span class="section-number">9.</span> Changes to This Disclaimer</h2>
+                        
+                        <div class="subsection">
+                            <h3>9.1 Right to Modify</h3>
+                            <p>We reserve the right to update or modify this disclaimer at any time to reflect:</p>
+                            <ul class="legal-list">
+                                <li>Changes in our Content or services</li>
+                                <li>Legal or regulatory requirements</li>
+                                <li>Industry best practices</li>
+                                <li>User feedback and concerns</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>9.2 Notice of Changes</h3>
+                            <p>Significant changes to this disclaimer will be communicated through:</p>
+                            <ul class="legal-list">
+                                <li>Updates to our website</li>
+                                <li>Announcements in our podcast episodes</li>
+                                <li>Email notifications to subscribers</li>
+                                <li>Social media announcements</li>
+                            </ul>
+                        </div>
+
+                        <div class="subsection">
+                            <h3>9.3 Continued Use</h3>
+                            <p>Your continued use of our Content after any changes constitutes acceptance of the updated disclaimer.</p>
+                        </div>
+                    </section>
+
+                    <div class="agreement-footer">
+                        <div class="acceptance-box">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Disclaimer Acknowledgment</h3>
+                                <p><strong>By accessing and using our Content, you acknowledge that you have read, understood, and agreed to this disclaimer and its limitations.</strong></p>
+                                <p class="disclaimer-text">This disclaimer is an integral part of our terms of service and applies to all users of our Content.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h4>Questions About This Disclaimer?</h4>
+                            <p>If you have questions or concerns about this disclaimer, please contact us through our official channels. We are committed to transparency and will address your inquiries promptly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
+%>
+
+<%- include('layout', { body }) %>

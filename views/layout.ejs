@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="/images/loga.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Meta tags -->
+    <meta name="description" content="Dosti And Dialogues - A podcast about friendship, conversations, and life">
+    <meta name="keywords" content="podcast, dosti, dialogues, friendship, conversations">
+    <meta name="author" content="Dosti And Dialogues">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="Dosti And Dialogues - A podcast about friendship, conversations, and life">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="Dosti And Dialogues - A podcast about friendship, conversations, and life">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-microphone mic-icon"></i>
+                        <i class="fas fa-headphones headphones-icon"></i>
+                    </div>
+                    <div class="brand-text">
+                        <h1>Dosti And</h1>
+                        <h1>Dialogues</h1>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/terms" class="nav-link">Terms</a></li>
+                    <!-- <li><a href="/privacy" class="nav-link">Privacy</a></li>
+                    <li><a href="/disclaimer" class="nav-link">Disclaimer</a></li> -->
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <%- body %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-circle">
+                            <i class="fas fa-microphone mic-icon"></i>
+                            <i class="fas fa-headphones headphones-icon"></i>
+                        </div>
+                        <div class="brand-text">
+                            <h3>Dosti And Dialogues</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="/terms">Terms & Conditions</a></li>
+                            <!-- <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/disclaimer">Disclaimer</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <!-- <li><a href="#" target="_blank"><i class="fab fa-spotify"></i> Spotify</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-apple"></i> Apple Podcasts</a></li> -->
+                            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <%= currentYear %> Dosti And Dialogues. All rights reserved.</p>
+                <p class="footer-tagline">Conversations that matter, friendships that last.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
